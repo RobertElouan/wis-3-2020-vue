@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.titre {
+			margin-top: 10%;
+			text-align: center;
+			color: white;
+		}
+		.texte2 {
+			text-align: center;
+			color: white;
+		}
+		.texte {
+			text-align: center;
+		}
+	</style>
+</head>
+<body background="https://initiate.alphacoders.com/images/589/cropped-1920-1080-589126.jpg?822">
+	<h1 class="titre">Venez découvrir votre signe astrologique chinois et sa signification !</h1>
+	<h2 class="texte2">Indiquez votre année de naissance :</h2>
+	<!--<label for="start">Start date:</label>
+	<input type="date" id="test" name="date_naissance"
+			value="2000-07-11"
+			min="1924-01-01" max="2020-11-20" required>
+
+	<input type="submit" name="confirmation_date" onclick="recup_date()">*-->
+	<div class="texte">
+		<input type="number" name="test" id="annee">
+		<input type="submit" name="bouton" onclick="recup_annee()">
+	</div>
+	<script type="text/javascript">
+		/*function recup_date() {
+			date_naissance = document.getElementById('test').value;
+			alert(date_naissance);
+		}*/
+
+		function recup_annee() {
+			annee = document.getElementById('annee').value;
+			astre();
+		}
+
+		
+
+		function astre() {
+			Rat = 2020 % 12;
+			Boeuf = 2021 % 12;
+			Tigre = 2022 % 12;
+			Lapin = 2023 % 12;
+			Dragon = 2024 % 12;
+			Serpent = 2025 % 12;
+			Cheval = 2026 % 12;
+			Mouton = 2027 % 12;
+			Singe = 2028 % 12;
+			Coq = 2029 % 12;
+			Chien = 2030 % 12;
+			Cochon = 2031 % 12;
+			annee = annee % 12;
+
+			if (annee == Rat) {
+				document.write("<div><h1>Votre signe astrologique est le Rat.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Intelligent</li>\
+							<li>- Débrouillard</li>\
+							<li>- Versatile</li>\
+							<li>- Gentil</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Dragon</li>\
+							<li>- Lapin</li>\
+							<li>- Boeuf</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Boeuf) {
+				document.write("<div><h1>Votre signe astrologique est le Boeuf.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Studieux</li>\
+							<li>- Fiable</li>\
+							<li>- Fort</li>\
+							<li>- Déterminé</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Rat</li>\
+							<li>- Serpent</li>\
+							<li>- Coq</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Tigre) {
+				document.write("<div><h1>Votre signe astrologique est le Tigre.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Brave</li>\
+							<li>- Confiant</li>\
+							<li>- Compétiteur</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Cheval</li>\
+							<li>- Chien</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Lapin) {
+				document.write("<div><h1>Votre signe astrologique est le Lapin.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Silencieux</li>\
+							<li>- Elégent</li>\
+							<li>- Gentil</li>\
+							<li>- Responsable</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Mouton</li>\
+							<li>- Chien</li>\
+							<li>- Rat</li>\
+							<li>- Cochon</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Dragon) {
+				document.write("<div><h1>Votre signe astrologique est le Dragon.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Confiant</li>\
+							<li>- Intelligent</li>\
+							<li>- Enthousiaste</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Rat</li>\
+							<li>- Singe</li>\
+							<li>- Coq</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Serpent) {
+				document.write("<div><h1>Votre signe astrologique est le Serpent.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Enigmatique</li>\
+							<li>- Intelligent</li>\
+							<li>- Clairvoyant</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Boeuf</li>\
+							<li>- Coq</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Cheval) {
+				document.write("<div><h1>Votre signe astrologique est le Cheval.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Energique</li>\
+							<li>- Actif</li>\
+							<li>- Animé</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Tigre</li>\
+							<li>- Mouton</li>\
+							<li>- Chien</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Mouton) {
+				document.write("<div><h1>Votre signe astrologique est le Mouton.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Calme</li>\
+							<li>- Doux</li>\
+							<li>- Sympathique</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Lapin</li>\
+							<li>- Cheval</li>\
+							<li>- Cochon</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Singe) {
+				document.write("<div><h1>Votre signe astrologique est le Singe.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Vif</li>\
+							<li>- Intelligent</li>\
+							<li>- Curieux</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Rat</li>\
+							<li>- Dragon</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Coq) {
+				document.write("<div><h1>Votre signe astrologique est le Coq.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Observateur</li>\
+							<li>- Travailleur</li>\
+							<li>- Courageux</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Boeuf</li>\
+							<li>- Dragon</li>\
+							<li>- Serpent</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Chien) {
+				document.write("<div><h1>Votre signe astrologique est le Chien.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Mignon</li>\
+							<li>- Honnête</li>\
+							<li>- Prudent</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Tigre</li>\
+							<li>- Lapin</li>\
+							<li>- Cheval</li>\
+						</ul>\
+					");
+			}
+			else if (annee == Cochon) {
+				document.write("<div><h1>Votre signe astrologique est le Cochon.</h1></div>\
+					<div>Vos traits de personnalité sont :\
+						<ul>\
+							<li>- Sentimental</li>\
+							<li>- Généreux</li>\
+							<li>- Studieux</li>\
+						</ul>\
+					</div>\
+					<div>Quelle est votre meilleur compatibilité avec les autres signes chinois ?</div>\
+					<div>Les voici :\
+						<ul>\
+							<li>- Mouton</li>\
+							<li>- Lapin</li>\
+						</ul>\
+					");
+			}
+			else {
+				alert("Une erreur c'est produite");
+			}	
+		}
+		
+
+	</script>
+</body>
+</html>
